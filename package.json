@@ -1,0 +1,23 @@
+{
+  "name": "task-tracker",
+  "version": "1.0.0",
+  "description": "CLI Task Tracker para administrar tareas",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "bin": {
+    "task": "./task-cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "task": "node task-cli.js",
+    "task:add": "node task-cli.js add",
+    "task:list": "node task-cli.js list",
+    "task:help": "node task-cli.js help"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
