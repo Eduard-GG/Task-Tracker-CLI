@@ -2,6 +2,11 @@
 
 Una aplicación de línea de comandos para administrar tus tareas y lista de tareas pendientes.
 
+## 🔗 Enlaces del Proyecto
+
+- **📦 Repositorio GitHub**: [https://github.com/Eduard-GG/Task-Tracker-CLI](https://github.com/Eduard-GG/Task-Tracker-CLI)
+- **👨‍💻 Autor**: [Eduard-GG](https://github.com/Eduard-GG)
+
 ## 🚀 Características
 
 - ✅ Agregar nuevas tareas
@@ -26,17 +31,28 @@ Una aplicación de línea de comandos para administrar tus tareas y lista de tar
 
 ### Pasos de Instalación
 
+#### Opción 1: Desde GitHub (Recomendado)
+
 1. **Instala Node.js** desde [nodejs.org](https://nodejs.org/) si no lo tienes
-2. **Clona este repositorio** o descarga los archivos
+2. **Clona este repositorio**:
+   ```bash
+   git clone https://github.com/Eduard-GG/Task-Tracker-CLI.git
+   ```
 3. **Navega al directorio del proyecto**:
    ```bash
-   cd task-tracker
+   cd Task-Tracker-CLI
    ```
 4. **Instala el comando globalmente**:
    ```bash
    npm install -g .
    ```
 5. **¡Ya puedes usar el comando `task` desde cualquier ubicación!**
+
+#### Opción 2: Descarga directa
+
+1. **Descarga el ZIP** desde [GitHub](https://github.com/Eduard-GG/Task-Tracker-CLI/archive/refs/heads/master.zip)
+2. **Extrae los archivos** y navega al directorio
+3. **Sigue los pasos 4-5** de la opción anterior
 
 ### Verificar Instalación
 
