@@ -2,9 +2,12 @@
 
 Una aplicación de línea de comandos para administrar tus tareas y lista de tareas pendientes.
 
+> 💡 **Proyecto basado en**: Este proyecto está inspirado y cumple con los requisitos del [Task Tracker CLI project](https://roadmap.sh/projects/task-tracker) de roadmap.sh, diseñado para practicar habilidades de desarrollo backend y CLI.
+
 ## 🔗 Enlaces del Proyecto
 
-- **📦 Repositorio GitHub**: [https://github.com/Eduard-GG/Task-Tracker-CLI](https://github.com/Eduard-GG/Task-Tracker-CLI)
+- **� Proyecto Original**: [https://roadmap.sh/projects/task-tracker](https://roadmap.sh/projects/task-tracker)
+- **�📦 Repositorio GitHub**: [https://github.com/Eduard-GG/Task-Tracker-CLI](https://github.com/Eduard-GG/Task-Tracker-CLI)
 - **👨‍💻 Autor**: [Eduard-GG](https://github.com/Eduard-GG)
 
 ## 🚀 Características
@@ -297,3 +300,44 @@ task-tracker/
 ```bash
 npm uninstall -g task-tracker
 ```
+
+## 🤝 Contribuir
+
+¡Las contribuciones son bienvenidas! Si quieres mejorar este proyecto:
+
+1. **Fork el proyecto** desde [GitHub](https://github.com/Eduard-GG/Task-Tracker-CLI)
+2. **Crea una rama** para tu feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit tus cambios** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push a la rama** (`git push origin feature/AmazingFeature`)
+5. **Abre un Pull Request** en [GitHub](https://github.com/Eduard-GG/Task-Tracker-CLI/pulls)
+
+### Ideas para contribuir:
+- 🐛 Reportar bugs
+- ✨ Sugerir nuevas funcionalidades
+- 📖 Mejorar la documentación
+- 🧪 Agregar tests
+- 🎨 Mejorar la interfaz CLI
+
+## 🎯 Sobre el Proyecto
+
+Este Task Tracker CLI fue desarrollado como parte del [Task Tracker project](https://roadmap.sh/projects/task-tracker) de roadmap.sh. El objetivo es practicar habilidades fundamentales de desarrollo incluyendo:
+
+- ✅ **Manejo de archivos**: Persistencia de datos en JSON
+- ✅ **Interfaz de línea de comandos**: Parsing de argumentos y comandos
+- ✅ **Gestión de errores**: Validación y manejo de errores
+- ✅ **Estructuras de datos**: Organización y manipulación de datos
+- ✅ **CRUD Operations**: Create, Read, Update, Delete de tareas
+
+### Requisitos Implementados del Proyecto Original:
+- [x] Agregar, actualizar y eliminar tareas
+- [x] Marcar tareas como en progreso o completadas
+- [x] Listar todas las tareas
+- [x] Listar tareas por estado (todo, in-progress, done)
+- [x] Almacenamiento persistente en JSON
+- [x] Interfaz CLI amigable
+- [x] Manejo de IDs únicos
+- [x] Timestamps de creación y actualización
+
+## 📝 Licencia
+
+Este proyecto está bajo la Licencia ISC - ver el archivo [LICENSE](https://github.com/Eduard-GG/Task-Tracker-CLI/blob/master/LICENSE) para más detalles.
