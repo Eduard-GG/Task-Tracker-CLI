@@ -236,6 +236,7 @@ COMANDOS DISPONIBLES:
   mark-done <id>             Marcar tarea como completada
   delete <id>                Eliminar una tarea específica
   delete-all                 Eliminar TODAS las tareas (¡cuidado!)
+  test                       Ejecutar tests automatizados
   help                       Mostrar esta ayuda
 
 EJEMPLOS:
@@ -247,6 +248,7 @@ EJEMPLOS:
   task update 1 "Estudiar Node.js"
   task delete 1      # eliminar tarea específica
   task delete-all    # eliminar TODAS las tareas
+  task test          # ejecutar tests automatizados
 `);
 }
 
@@ -329,6 +331,11 @@ function main() {
             showHelp();
             break;
 
+        case 'test':
+        case '--test':
+            runTests();
+            break;
+
         default:
             if (!command) {
                 showHelp();
@@ -338,6 +345,37 @@ function main() {
             }
             break;
     }
+}
+
+// Ejecutar tests
+function runTests() {
+    console.log('🧪 Ejecutando tests para Task Tracker CLI...\n');
+    
+    const { spawn } = require('child_process');
+    const path = require('path');
+    
+    // Ruta al archivo de tests
+    const testFile = path.join(__dirname, 'tests', 'task-tests.js');
+    
+    // Ejecutar tests
+    const testProcess = spawn('node', [testFile], {
+        stdio: 'inherit',
+        cwd: __dirname
+    });
+    
+    testProcess.on('close', (code) => {
+        if (code === 0) {
+            console.log('\n✅ Tests completados exitosamente!');
+        } else {
+            console.log('\n❌ Algunos tests fallaron');
+            process.exit(code);
+        }
+    });
+    
+    testProcess.on('error', (error) => {
+        console.error('❌ Error al ejecutar tests:', error.message);
+        process.exit(1);
+    });
 }
 
 // Ejecutar la aplicación

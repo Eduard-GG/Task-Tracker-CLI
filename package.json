@@ -10,7 +10,7 @@
     "task": "./task-cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node tests/task-tests.js",
     "start": "node src/app.js",
     "task": "node task-cli.js",
     "task:add": "node task-cli.js add",
